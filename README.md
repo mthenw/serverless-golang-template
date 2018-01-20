@@ -1,0 +1,1 @@
+# serverless-golang-template
