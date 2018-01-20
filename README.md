@@ -8,25 +8,27 @@ Multi-function Serverless Framework template for Golang (AWS Lambda).
 
 ## Quick start
 
-1. Create a new service based on this template
+1. Create a new service in $GOPATH based on this template
 
 ```
 serverless create -u https://github.com/mthenw/serverless-golang-template -p usersservice
 ```
 
-2. Install framework dependencies
+2. Update `import` statements in `functions` directory files
+
+3. Install framework plugin
 
 ```
 npm i
 ```
 
-2. Install service dependencies
+4. Install service dependencies
 
 ```
 dep ensure
 ```
 
-3. Deploy
+5. Deploy
 
 ```
 sls deploy
