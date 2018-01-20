@@ -1,0 +1,25 @@
+service: aws-golang
+
+provider:
+  name: aws
+  runtime: go1.x
+
+functions:
+  create:
+    handler: bin/create
+  delete:
+    handler: bin/delete
+
+package:
+  exclude:
+    - ./**
+  include:
+    - ./bin/**
+
+plugins:
+  - serverless-plugin-scripts
+
+custom:
+  scripts:
+    hooks:
+      package:initialize: make compile

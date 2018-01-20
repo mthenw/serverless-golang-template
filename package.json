@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "serverless-plugin-scripts": "^1.0.2"
+  }
+}
